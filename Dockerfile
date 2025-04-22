@@ -1,19 +1,67 @@
-FROM public.ecr.aws/lambda/python:3.10
+FROM amazonlinux:2
 
-# Install required tools for TinyTeX and PDF compilation
-RUN yum install -y curl wget perl tar gzip make xz unzip findutils && yum clean all
+# Install system dependencies for TinyTeX and AWS Lambda compatibility
+RUN yum -y update && \
+    yum -y install \
+      perl \
+      wget \
+      curl \
+      tar \
+      gzip \
+      make \
+      xz \
+      unzip \
+      findutils \
+      which \
+      python3 \
+      shadow-utils && \
+    yum clean all
 
-# Install TinyTeX
+# Install TinyTeX (latest TeX Live)
 RUN curl -L -o /install-tinytex.sh https://yihui.org/tinytex/install-bin-unix.sh && \
     chmod +x /install-tinytex.sh && \
     ./install-tinytex.sh && \
     ln -s /root/.TinyTeX/bin/*/pdflatex /usr/local/bin/pdflatex
 
-# Set environment path
+# Set PATH so pdflatex is always found
 ENV PATH="/root/.TinyTeX/bin/x86_64-linuxmusl:$PATH"
 
-# Copy your Lambda function
-COPY app.py .
+# Install essential LaTeX packages you'll likely need
+RUN /root/.TinyTeX/bin/*/tlmgr install \
+      latex-bin \
+      latexmk \
+      geometry \
+      fancyhdr \
+      ulem \
+      xcolor \
+      microtype \
+      fontspec \
+      amsmath \
+      hyperref \
+      babel \
+      enumitem \
+      titlesec \
+      pgf \
+      tikzsymbols \
+      booktabs \
+      upquote \
+      etoolbox \
+      graphicx \
+      tools
 
-# Lambda entrypoint
+# Install AWS Lambda Runtime Interface Emulator (RIE)
+ADD https://github.com/aws/aws-lambda-runtime-interface-emulator/releases/latest/download/aws-lambda-rie /usr/local/bin/aws-lambda-rie
+RUN chmod +x /usr/local/bin/aws-lambda-rie
+
+# Create a non-root Lambda-compatible user
+RUN useradd -m lambdauser
+WORKDIR /home/lambdauser
+
+# Copy Lambda handler
+COPY app.py .
+RUN chown -R lambdauser:lambdauser /home/lambdauser
+USER lambdauser
+
+# Lambda runtime entrypoint
+ENTRYPOINT ["/usr/local/bin/aws-lambda-rie", "python3", "-m", "awslambdaric"]
 CMD ["app.lambda_handler"]
