@@ -1,63 +1,48 @@
 FROM amazonlinux:2
 
-# Install system dependencies for TinyTeX and AWS Lambda compatibility
-RUN yum -y update && \
-    yum -y install \
-      perl \
-      wget \
-      curl \
-      tar \
-      gzip \
-      make \
-      xz \
-      unzip \
-      findutils \
-      which \
-      python3 \
-      shadow-utils && \
-    yum clean all
+# Install system dependencies
+RUN yum -y update && yum -y install \
+    perl wget curl tar gzip make xz unzip findutils which \
+    python3 shadow-utils && yum clean all
 
-# Install TinyTeX (latest TeX Live)
-# Set HOME so TinyTeX knows where to install
-ENV HOME=/root
+# Manually install TinyTeX
+WORKDIR /opt
+RUN curl -LO https://yihui.org/tinytex/TinyTeX-1.tar.gz && \
+    tar -xzf TinyTeX-1.tar.gz && \
+    mv TinyTeX /opt/TinyTeX && \
+    rm -f TinyTeX-1.tar.gz
 
-# Download and install TinyTeX (robust version)
-RUN curl -L -o install-tinytex.sh https://yihui.org/tinytex/install-bin-unix.sh && \
-    chmod +x install-tinytex.sh && \
-    ./install-tinytex.sh --admin --no-path && \
-    ln -s /root/.TinyTeX/bin/*/pdflatex /usr/local/bin/pdflatex
+# Set PATH
+ENV PATH="/opt/TinyTeX/bin/x86_64-linuxmusl:$PATH"
 
-# Set PATH so pdflatex is always found
-ENV PATH="/root/.TinyTeX/bin/x86_64-linuxmusl:$PATH"
-
-# Install essential LaTeX packages you'll likely need
-RUN /root/.TinyTeX/bin/*/tlmgr install \
-      latex-bin \
-      latexmk \
-      geometry \
-      fancyhdr \
-      ulem \
-      xcolor \
-      microtype \
-      fontspec \
-      amsmath \
-      hyperref \
-      babel \
-      enumitem \
-      titlesec \
-      pgf \
-      tikzsymbols \
-      booktabs \
-      upquote \
-      etoolbox \
-      graphicx \
-      tools
+# Pre-install essential LaTeX packages (choose what you need)
+RUN /opt/TinyTeX/bin/*/tlmgr install \
+    latex-bin \
+    latexmk \
+    geometry \
+    fancyhdr \
+    ulem \
+    xcolor \
+    microtype \
+    fontspec \
+    amsmath \
+    hyperref \
+    babel \
+    enumitem \
+    titlesec \
+    pgf \
+    tikzsymbols \
+    booktabs \
+    upquote \
+    etoolbox \
+    graphicx \
+    tools
 
 # Install AWS Lambda Runtime Interface Emulator (RIE)
 ADD https://github.com/aws/aws-lambda-runtime-interface-emulator/releases/latest/download/aws-lambda-rie /usr/local/bin/aws-lambda-rie
 RUN chmod +x /usr/local/bin/aws-lambda-rie
 
-# Create a non-root Lambda-compatible user
+# Add a non-root user for Lambda compliance
 RUN useradd -m lambdauser
 WORKDIR /home/lambdauser
 
