@@ -18,9 +18,13 @@ RUN yum -y update && \
     yum clean all
 
 # Install TinyTeX (latest TeX Live)
-RUN curl -L -o /install-tinytex.sh https://yihui.org/tinytex/install-bin-unix.sh && \
-    chmod +x /install-tinytex.sh && \
-    ./install-tinytex.sh && \
+# Set HOME so TinyTeX knows where to install
+ENV HOME=/root
+
+# Download and install TinyTeX (robust version)
+RUN curl -L -o install-tinytex.sh https://yihui.org/tinytex/install-bin-unix.sh && \
+    chmod +x install-tinytex.sh && \
+    ./install-tinytex.sh --admin --no-path && \
     ln -s /root/.TinyTeX/bin/*/pdflatex /usr/local/bin/pdflatex
 
 # Set PATH so pdflatex is always found
