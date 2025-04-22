@@ -1,49 +1,54 @@
+import boto3
 import os
 import subprocess
-import base64
 import json
-import boto3
 from datetime import datetime
 
 s3 = boto3.client('s3')
-bucket_name = os.environ.get("BUCKET_NAME", "")  # Set this in Lambda config
 
 def lambda_handler(event, context):
-    # Get LaTeX string
-    body = json.loads(event["body"])
-    tex_content = body.get("tex", "")
+    # Parse request body safely
+    body = json.loads(event['body']) if isinstance(event.get("body"), str) else event
+    bucket = body.get("bucket", os.environ.get("BUCKET_NAME"))
+    tex_key = body.get("tex_key")
+    pdf_key_prefix = body.get("pdf_key_prefix", "latex/outputs/")
 
-    # Save it to /tmp
+    if not (bucket and tex_key):
+        return {"statusCode": 400, "body": "Missing 'bucket' or 'tex_key'"}
+
+    # File paths
     tex_path = "/tmp/document.tex"
     pdf_path = "/tmp/document.pdf"
-    with open(tex_path, "w") as f:
-        f.write(tex_content)
 
     try:
+        # Download the .tex file from S3
+        s3.download_file(bucket, tex_key, tex_path)
+
+        # Compile the .tex file
         subprocess.run(["pdflatex", "-output-directory", "/tmp", tex_path], check=True)
 
-        # Upload to S3 (optional but better than base64 for large PDFs)
+        # Upload compiled PDF
         timestamp = datetime.utcnow().strftime("%Y%m%d%H%M%S")
-        s3_key = f"pdfs/document_{timestamp}.pdf"
-        s3.upload_file(pdf_path, bucket_name, s3_key)
+        pdf_key = f"{pdf_key_prefix}compiled_{timestamp}.pdf"
+        s3.upload_file(pdf_path, bucket, pdf_key)
 
-        presigned_url = s3.generate_presigned_url(
+        # Return a presigned URL for the PDF
+        url = s3.generate_presigned_url(
             ClientMethod='get_object',
-            Params={'Bucket': bucket_name, 'Key': s3_key},
-            ExpiresIn=3600  # 1 hour
+            Params={"Bucket": bucket, "Key": pdf_key},
+            ExpiresIn=3600
         )
 
         return {
             "statusCode": 200,
-            "headers": {"Content-Type": "application/json"},
             "body": json.dumps({
                 "message": "PDF generated successfully",
-                "url": presigned_url
+                "url": url
             })
         }
 
-    except subprocess.CalledProcessError:
+    except Exception as e:
         return {
             "statusCode": 500,
-            "body": json.dumps({"error": "LaTeX compilation failed"})
+            "body": json.dumps({"error": str(e)})
         }
