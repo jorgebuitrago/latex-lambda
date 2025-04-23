@@ -24,16 +24,22 @@ def lambda_handler(event, context):
             "body": "Missing 'bucket' or 'tex_key'"
         }
 
-    # Define local file paths for .tex and .pdf
+    # Define local file paths
     tex_path = "/tmp/document.tex"
     pdf_path = "/tmp/document.pdf"
+    log_path = "/tmp/document.log"
 
     # Download the .tex file from S3
     s3.download_file(bucket, tex_key, tex_path)
 
     try:
         # Compile the .tex file using pdflatex
-        subprocess.run(["pdflatex", "-output-directory", "/tmp", tex_path], check=True)
+        subprocess.run(
+            ["pdflatex", "-interaction=nonstopmode", "-output-directory", "/tmp", tex_path],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            check=True
+        )
     except subprocess.CalledProcessError as e:
         return {
             "statusCode": 500,
@@ -44,18 +50,27 @@ def lambda_handler(event, context):
             })
         }
 
-    # Determine the PDF key (location and name in S3)
+    # Determine output filenames and keys
     timestamp = datetime.utcnow().strftime("%Y%m%d%H%M%S")
-    if custom_pdf_name:
-        pdf_key = f"{pdf_key_prefix}{custom_pdf_name}"
-    else:
-        pdf_key = f"{pdf_key_prefix}compiled_{timestamp}.pdf"
+    pdf_key = f"{pdf_key_prefix}{custom_pdf_name}" if custom_pdf_name else f"{pdf_key_prefix}compiled_{timestamp}.pdf"
+    log_key = pdf_key.replace(".pdf", ".log")
 
-    # Upload the compiled PDF back to S3
+    # Upload PDF
     s3.upload_file(pdf_path, bucket, pdf_key)
 
-    # Generate a presigned URL for the PDF
-    presigned_url = s3.generate_presigned_url(
+    # Upload LaTeX log (if exists)
+    if os.path.exists(log_path):
+        s3.upload_file(log_path, bucket, log_key)
+        log_url = s3.generate_presigned_url(
+            ClientMethod='get_object',
+            Params={"Bucket": bucket, "Key": log_key},
+            ExpiresIn=3600
+        )
+    else:
+        log_url = None
+
+    # Generate PDF download link
+    pdf_url = s3.generate_presigned_url(
         ClientMethod='get_object',
         Params={"Bucket": bucket, "Key": pdf_key},
         ExpiresIn=3600
@@ -65,6 +80,7 @@ def lambda_handler(event, context):
         "statusCode": 200,
         "body": json.dumps({
             "message": "PDF generated successfully",
-            "url": presigned_url
+            "pdf_url": pdf_url,
+            "log_url": log_url
         })
     }
