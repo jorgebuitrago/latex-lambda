@@ -1,0 +1,15 @@
+%vsan-file-services
+\section{vSAN File Services}
+\subsection{Descripción funcional}
+\paragraph{}
+vSAN File Services extiende las capacidades de vSAN para ofrecer almacenamiento basado en archivos (NFS y SMB) directamente desde el clúster vSAN, sin requerir hardware adicional o soluciones externas. Esto permite habilitar almacenamiento compartido para aplicaciones que requieren acceso por archivos, integrando su gestión al entorno VMware de forma nativa.
+\subsection{Beneficios para la organización}
+\begin{itemize}
+  \item \textbf{Reducción de costos de infraestructura:} Elimina la necesidad de soluciones NAS independientes al ofrecer almacenamiento de archivos desde la misma plataforma vSAN existente.
+  \item \textbf{Mayor simplicidad operativa:} Unifica la gestión de almacenamiento de bloques y archivos en una sola interfaz, simplificando la administración para los equipos de TI.
+  \item \textbf{Flexibilidad para entornos mixtos:} Soporta tanto cargas virtualizadas como servicios tradicionales que requieren almacenamiento en archivos, facilitando la consolidación de servicios sobre una misma infraestructura.
+\end{itemize}
+\subsection{Dificultad de implementación}
+\paragraph{2 estrellas}
+La activación requiere la configuración de redes, dominios y controladores de archivos distribuidos dentro del clúster vSAN. Aunque su integración es nativa, se recomienda realizar la implementación con el apoyo de personal técnico familiarizado con servicios de archivos y administración avanzada de vSAN.
+%vsan-file-services

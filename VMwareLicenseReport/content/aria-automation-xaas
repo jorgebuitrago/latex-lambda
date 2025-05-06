@@ -1,0 +1,15 @@
+%aria-automation-xaas
+\section{Aria Automation – XaaS (Anything as a Service)}
+\subsection{Descripción funcional}
+\paragraph{}
+Aria Automation permite ofrecer “Anything as a Service” (XaaS), habilitando la entrega automatizada de cualquier recurso, proceso o servicio a través de catálogos personalizados. Utilizando formularios dinámicos, flujos de trabajo de Aria Orchestrator y políticas de aprobación, es posible transformar procesos manuales en servicios de autoservicio, desde solicitudes de cuentas hasta configuraciones complejas de infraestructura o aplicaciones.
+\subsection{Beneficios para la organización}
+\begin{itemize}
+  \item \textbf{Digitalización de procesos internos:} Permite convertir tareas manuales y repetitivas en servicios automatizados, acelerando su ejecución y mejorando la experiencia del usuario.
+  \item \textbf{Mayor eficiencia y estandarización:} Reduce la intervención humana, minimiza errores y garantiza la ejecución uniforme de procesos a través de flujos aprobados y reutilizables.
+  \item \textbf{Flexibilidad total para la automatización:} Permite construir servicios personalizados que se adaptan a cualquier necesidad técnica u operativa, más allá de los casos de uso tradicionales de infraestructura.
+\end{itemize}
+\subsection{Dificultad de implementación}
+\paragraph{3 estrellas}
+La creación de servicios XaaS requiere modelar flujos de trabajo con Aria Orchestrator, diseñar formularios personalizados, definir lógicas de negocio y configurar validaciones y aprobaciones. Es una funcionalidad poderosa y altamente flexible, pero que requiere un entendimiento profundo de procesos internos, arquitectura de sistemas y capacidades de integración. Se recomienda contar con consultores especializados en automatización y arquitectos de soluciones.
+%aria-automation-xaas

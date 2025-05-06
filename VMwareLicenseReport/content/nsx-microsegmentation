@@ -1,0 +1,15 @@
+%nsx-microsegmentation
+\section{NSX Microsegmentación (Security Groups, Tagging y Smart Groups)}
+\subsection{Descripción funcional}
+\paragraph{}
+NSX permite aplicar políticas de seguridad granulares a nivel de máquina virtual mediante microsegmentación. A través de Security Groups dinámicos, etiquetas (tags) y Smart Groups basados en atributos, es posible segmentar entornos sin necesidad de cambios físicos en la red. Esto permite definir controles de acceso lógicos, coherentes y adaptativos según el rol, la ubicación o el estado de cada carga de trabajo.
+\subsection{Beneficios para la organización}
+\begin{itemize}
+  \item \textbf{Reducción del riesgo de movimientos laterales en la red:} Limita el alcance de amenazas internas o ataques que logran ingresar, segmentando el tráfico este-oeste incluso dentro del mismo entorno virtualizado.
+  \item \textbf{Seguridad adaptable y automatizada:} Las políticas siguen a las máquinas virtuales a medida que cambian de clúster, red o ubicación, eliminando la necesidad de reconfigurar firewalls o ACLs tradicionales.
+  \item \textbf{Mayor cumplimiento normativo y control operativo:} Facilita la implementación de modelos Zero Trust, la auditoría de accesos y el cumplimiento de estándares como PCI-DSS, ISO 27001 o HIPAA.
+\end{itemize}
+\subsection{Dificultad de implementación}
+\paragraph{2 estrellas}
+La implementación requiere planificación de las etiquetas, clasificación de cargas y definición de políticas de seguridad. Aunque técnicamente no implica rediseño, sí requiere una estrategia de segmentación clara y la participación de equipos de seguridad y operaciones. El acompañamiento de consultores con experiencia en modelos Zero Trust es recomendable para maximizar su efectividad.
+%nsx-microsegmentation

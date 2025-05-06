@@ -1,0 +1,15 @@
+%aria-automation-integrations
+\section{Aria Automation – Integración con Plataformas y Servicios de Terceros}
+\subsection{Descripción funcional}
+\paragraph{}
+Aria Automation permite integrar de forma nativa y extendida con plataformas de terceros como ServiceNow, Ansible, Git, Puppet, Terraform, entre muchas otras. Además, mediante Aria Orchestrator y su ecosistema de plugins, es posible automatizar prácticamente cualquier sistema con APIs disponibles, permitiendo flujos de trabajo personalizados que conectan infraestructura, aplicaciones, herramientas de ITSM y procesos de negocio.
+\subsection{Beneficios para la organización}
+\begin{itemize}
+  \item \textbf{Automatización de procesos de extremo a extremo:} Facilita la orquestación de tareas complejas entre múltiples plataformas, unificando la gestión de infraestructura, servicios y operaciones en una única capa de automatización.
+  \item \textbf{Mayor eficiencia operativa e integración con flujos existentes:} Se integra sin fricción con herramientas ya utilizadas por la organización (como ServiceNow o Ansible), evitando duplicidad de plataformas y mejorando la colaboración entre equipos.
+  \item \textbf{Flexibilidad ilimitada y extensibilidad:} Con Aria Orchestrator y sus plugins, se pueden construir flujos de trabajo completamente personalizados para cualquier entorno o requerimiento, permitiendo adaptar la plataforma a la realidad del negocio.
+\end{itemize}
+\subsection{Dificultad de implementación}
+\paragraph{3 estrellas}
+La implementación de integraciones requiere comprensión técnica de las APIs, flujos operativos y seguridad de las plataformas externas. Además, se deben construir workflows personalizados en Aria Orchestrator, validar autenticaciones, permisos y lógica de negocio. Se recomienda contar con arquitectos de automatización y consultores con experiencia en DevOps, ITSM y plataformas interconectadas para una integración exitosa y escalable.
+%aria-automation-integrations

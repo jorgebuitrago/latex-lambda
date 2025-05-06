@@ -1,0 +1,15 @@
+%vsphere-sdrs
+\section{vSphere Storage DRS}
+\subsection{Descripción funcional}
+\paragraph{}
+Storage DRS permite automatizar la colocación y balanceo de máquinas virtuales en datastores dentro de un clúster de almacenamiento. Utiliza métricas de espacio disponible y rendimiento para mover o ubicar las máquinas virtuales de forma óptima, reduciendo la congestión y mejorando la eficiencia del entorno de almacenamiento.
+\subsection{Beneficios para la organización}
+\begin{itemize}
+  \item \textbf{Optimización del rendimiento de almacenamiento:} Minimiza los cuellos de botella al distribuir las cargas de manera más eficiente entre los datastores, mejorando el desempeño general de las aplicaciones.
+  \item \textbf{Reducción del trabajo manual y errores operativos:} Automatiza decisiones que normalmente requerirían intervención de administradores, disminuyendo el riesgo de errores humanos y liberando tiempo del equipo técnico.
+  \item \textbf{Evita gastos innecesarios en almacenamiento adicional:} Al aprovechar de forma más efectiva los recursos existentes, retrasa o reduce la necesidad de inversiones en nuevos dispositivos de almacenamiento.
+\end{itemize}
+\subsection{Dificultad de implementación}
+\paragraph{2 estrellas}
+Requiere la creación de clústeres de almacenamiento y análisis de las políticas de migración. Aunque su configuración es relativamente sencilla, es necesario realizar validaciones sobre compatibilidad y carga actual. Se recomienda la participación de personal con experiencia en administración de almacenamiento VMware para una implementación controlada.
+%vsphere-sdrs

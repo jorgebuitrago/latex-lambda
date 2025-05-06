@@ -1,0 +1,15 @@
+%aria-automation-iaas
+\section{Aria Automation – IaaS (Infrastructure as a Service)}
+\subsection{Descripción funcional}
+\paragraph{}
+Aria Automation permite ofrecer infraestructura como servicio (IaaS) a través de la automatización del aprovisionamiento de máquinas virtuales, redes, almacenamiento y otros recursos de TI. Esta plataforma permite a los usuarios solicitar y desplegar entornos completos bajo demanda, con autoservicio, gobernanza centralizada y cumplimiento de políticas corporativas.
+\subsection{Beneficios para la organización}
+\begin{itemize}
+  \item \textbf{Agilidad operativa y reducción del time-to-market:} Acelera el despliegue de entornos de desarrollo, prueba o producción, permitiendo a las áreas de negocio recibir infraestructura en minutos en lugar de días.
+  \item \textbf{Optimización del uso de recursos y reducción de costos:} Permite establecer límites, políticas de caducidad y recuperación automática de recursos no utilizados, evitando el sobreaprovisionamiento.
+  \item \textbf{Gobernanza y control centralizado:} Aplica reglas de acceso, cumplimiento y configuración desde un único punto, estandarizando la forma en que se consume infraestructura en entornos híbridos y multi-nube.
+\end{itemize}
+\subsection{Dificultad de implementación}
+\paragraph{3 estrellas}
+La implementación de IaaS con Aria Automation requiere diseño de catálogos de servicios, integración con plataformas de infraestructura (vSphere, NSX, nubes públicas), configuración de flujos de trabajo y políticas de gobernanza. Es una solución robusta que requiere arquitectos de automatización y consultores especializados para su adopción efectiva y alineada a los objetivos del negocio.
+%aria-automation-iaas

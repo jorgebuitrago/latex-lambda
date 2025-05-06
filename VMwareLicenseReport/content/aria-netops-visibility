@@ -1,0 +1,15 @@
+%aria-netops-visibility
+\section{Aria Operations for Networks – Visibilidad completa de redes físicas y virtuales}
+\subsection{Descripción funcional}
+\paragraph{}
+Aria Operations for Networks (anteriormente vRealize Network Insight) proporciona visibilidad integral de la topología, conectividad y flujo de tráfico en redes tanto físicas como virtuales. Permite descubrir y mapear automáticamente las dependencias entre aplicaciones, switches, routers, firewalls y redes SDN como NSX, facilitando un entendimiento profundo del entorno de red completo.
+\subsection{Beneficios para la organización}
+\begin{itemize}
+  \item \textbf{Reducción de tiempo en diagnóstico de problemas:} Al ofrecer una vista unificada y correlacionada de la infraestructura de red, acelera la identificación de cuellos de botella, interrupciones y errores de configuración.
+  \item \textbf{Mayor control y trazabilidad operativa:} Proporciona visibilidad detallada sobre cómo fluyen los datos entre aplicaciones, segmentos y sitios, lo que facilita auditorías, migraciones y validación de políticas de seguridad.
+  \item \textbf{Optimización de rendimiento y planeación:} Permite analizar patrones de tráfico, evaluar la utilización de la red y tomar decisiones informadas para escalar servicios, mejorar arquitectura o planear nuevas implementaciones.
+\end{itemize}
+\subsection{Dificultad de implementación}
+\paragraph{2 estrellas}
+La implementación requiere conectividad con múltiples fuentes de datos (vCenter, NSX, switches, routers, firewalls físicos y virtuales), autenticación segura y permisos de lectura. Aunque no implica rediseño de red, se necesita coordinación con equipos de infraestructura, redes y seguridad para asegurar una cobertura completa y configuración adecuada del monitoreo.
+%aria-netops-visibility

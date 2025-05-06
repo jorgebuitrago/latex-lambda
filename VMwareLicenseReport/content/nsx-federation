@@ -1,0 +1,15 @@
+%nsx-federation
+\section{NSX Federation}
+\subsection{Descripción funcional}
+\paragraph{}
+NSX Federation permite administrar múltiples dominios NSX desde una consola centralizada, estandarizando políticas de red y seguridad en entornos distribuidos. Facilita la gestión de políticas globales, la recuperación ante desastres y la consistencia operativa entre data centers o regiones, sin necesidad de configuraciones repetidas en cada sitio.
+\subsection{Beneficios para la organización}
+\begin{itemize}
+  \item \textbf{Consistencia operativa y de seguridad entre sitios:} Permite aplicar políticas de red y seguridad homogéneas en todos los dominios NSX, reduciendo errores de configuración y fortaleciendo el control centralizado.
+  \item \textbf{Mejor recuperación ante desastres:} Simplifica la replicación de políticas y topologías entre sitios, facilitando el failover y la continuidad operativa ante eventos críticos.
+  \item \textbf{Reducción del esfuerzo administrativo:} Evita la gestión aislada de múltiples entornos NSX, optimizando recursos humanos y reduciendo el tiempo necesario para desplegar o modificar configuraciones globales.
+\end{itemize}
+\subsection{Dificultad de implementación}
+\paragraph{3 estrellas}
+La implementación de NSX Federation requiere una arquitectura distribuida, conectividad robusta entre dominios, y planeación detallada de las funciones y límites de cada sitio. Es necesario validar la compatibilidad de versiones y coordinar la migración o integración con los entornos NSX existentes. Se recomienda la participación de arquitectos con experiencia en entornos multi-sitio y gobernanza de red.
+%nsx-federation

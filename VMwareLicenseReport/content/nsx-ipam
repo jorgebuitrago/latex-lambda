@@ -1,0 +1,15 @@
+%nsx-ipam
+\section{NSX IPAM (IP Address Management)}
+\subsection{Descripción funcional}
+\paragraph{}
+NSX IPAM permite la asignación y gestión automatizada de direcciones IP dentro del entorno virtualizado, ya sea utilizando un proveedor IPAM externo o a través de capacidades integradas en NSX. Facilita el control, rastreo y provisión eficiente de direcciones IP para máquinas virtuales, redes lógicas y servicios, alineando la asignación de recursos de red con las políticas de la organización.
+\subsection{Beneficios para la organización}
+\begin{itemize}
+  \item \textbf{Mejora en el control y visibilidad de direcciones IP:} Evita conflictos de direcciones y permite una trazabilidad completa del uso de IPs en entornos dinámicos y multitenant.
+  \item \textbf{Automatización de provisión de red:} Permite integrar la asignación de IPs en flujos automatizados de creación de servicios, acelerando el time-to-service y reduciendo la carga operativa del equipo de TI.
+  \item \textbf{Optimización del uso de recursos de red:} Facilita la planificación y segmentación eficiente de subredes, maximizando el uso de espacio IP disponible y evitando desperdicio de rangos.
+\end{itemize}
+\subsection{Dificultad de implementación}
+\paragraph{2 estrellas}
+La integración con soluciones IPAM externas requiere configuración de conectividad, autenticación y pruebas funcionales. Aunque no representa un rediseño arquitectónico, sí implica coordinación con equipos de red y gestión de direcciones IP. Se recomienda contar con personal familiarizado con flujos de automatización y administración de red para asegurar una implementación efectiva.
+%nsx-ipam

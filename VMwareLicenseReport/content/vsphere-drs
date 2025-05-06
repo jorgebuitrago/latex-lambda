@@ -1,0 +1,15 @@
+%vsphere-drs
+\section{vSphere Distributed Resource Scheduler (DRS)}
+\subsection{Descripción funcional}
+\paragraph{}
+DRS permite distribuir de forma automática y dinámica las cargas de trabajo entre los diferentes hosts de un clúster VMware, optimizando el uso de recursos como CPU y memoria. Analiza constantemente el estado del entorno y realiza recomendaciones o migraciones en tiempo real para mantener el rendimiento y el balance de la infraestructura.
+\subsection{Beneficios para la organización}
+\begin{itemize}
+  \item \textbf{Mejora del rendimiento y estabilidad de las aplicaciones:} Al balancear automáticamente las cargas de trabajo, se reduce el riesgo de saturación en los servidores físicos, garantizando un mejor desempeño para los usuarios finales.
+  \item \textbf{Reducción del esfuerzo operativo:} Minimiza la intervención manual del equipo de TI en la gestión de recursos, permitiendo una administración más eficiente y con menos errores.
+  \item \textbf{Optimización del uso de infraestructura existente:} Al maximizar la utilización de los recursos disponibles, DRS contribuye a evitar inversiones innecesarias en nuevo hardware.
+\end{itemize}
+\subsection{Dificultad de implementación}
+\paragraph{1 estrella}
+La activación de DRS es sencilla y puede realizarse en menos de 8 horas. No genera impacto en la operación y no requiere rediseño de arquitectura. Se recomienda validar previamente las políticas de automatización deseadas, pero no se necesita intervención de especialistas para su configuración inicial.
+%vsphere-drs

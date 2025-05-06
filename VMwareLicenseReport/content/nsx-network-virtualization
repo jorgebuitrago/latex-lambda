@@ -1,0 +1,15 @@
+%nsx-network-virtualization
+\section{NSX Network Virtualization (Overlay Geneve)}
+\subsection{Descripción funcional}
+\paragraph{}
+NSX Network Virtualization permite crear redes lógicas independientes de la infraestructura física, utilizando túneles de encapsulamiento Geneve para transportar tráfico entre nodos. Esta capa de overlay abstrae la red subyacente y permite una provisión más rápida, escalable y segura de servicios de red como switches, routers y firewalls distribuidos.
+\subsection{Beneficios para la organización}
+\begin{itemize}
+  \item \textbf{Agilidad operativa y despliegue más rápido de redes:} Permite crear topologías de red complejas en minutos, sin depender de cambios en el hardware físico ni del equipo de redes tradicional.
+  \item \textbf{Reducción de costos de infraestructura y simplificación:} Minimiza la necesidad de equipamiento de red dedicado, optimiza la utilización de la infraestructura existente y reduce el tiempo y costo de provisión de servicios.
+  \item \textbf{Escalabilidad y flexibilidad en entornos dinámicos:} Facilita el crecimiento del entorno virtual sin limitaciones físicas, ideal para organizaciones con múltiples clústeres o centros de datos distribuidos.
+\end{itemize}
+\subsection{Dificultad de implementación}
+\paragraph{3 estrellas}
+Requiere un diseño detallado de redes lógicas, preparación de hosts, configuración de túneles Geneve, y ajustes en la red física para asegurar conectividad. Implica una transformación de la arquitectura de red tradicional, por lo que debe ser liderado por arquitectos certificados en NSX con experiencia en entornos virtualizados complejos.
+%nsx-network-virtualization

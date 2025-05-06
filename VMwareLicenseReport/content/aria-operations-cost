@@ -1,0 +1,15 @@
+%aria-operations-cost
+\section{Aria Operations – Gestión de Costos}
+\subsection{Descripción funcional}
+\paragraph{}
+Aria Operations permite analizar, rastrear y optimizar los costos asociados a la infraestructura virtual y multi-nube. Proporciona visibilidad detallada de los costos por centro de datos, clúster, aplicación o unidad de negocio, permitiendo establecer presupuestos, asignar costos reales y simular escenarios financieros para mejorar la toma de decisiones en TI.
+\subsection{Beneficios para la organización}
+\begin{itemize}
+  \item \textbf{Transparencia financiera en TI:} Asocia costos a servicios, departamentos o proyectos específicos, facilitando la imputación de gastos y habilitando modelos de showback o chargeback.
+  \item \textbf{Optimización del gasto operativo:} Identifica oportunidades de ahorro en recursos infrautilizados o sobredimensionados, mejorando el uso de la infraestructura existente.
+  \item \textbf{Soporte a decisiones estratégicas de inversión:} Permite planificar presupuestos y modelar escenarios de crecimiento o migración, alineando las decisiones de TI con los objetivos financieros del negocio.
+\end{itemize}
+\subsection{Dificultad de implementación}
+\paragraph{2 estrellas}
+Requiere configurar modelos de costos personalizados, integrar fuentes de consumo y adaptar reportes según las necesidades del negocio. Aunque la funcionalidad es nativa en Aria Operations, se recomienda la participación de equipos financieros y de gestión de TI para alinear métricas técnicas con criterios contables y presupuestarios.
+%aria-operations-cost

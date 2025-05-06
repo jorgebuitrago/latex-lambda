@@ -1,0 +1,15 @@
+%nsx-dhcp
+\section{NSX DHCP}
+\subsection{Descripción funcional}
+\paragraph{}
+NSX DHCP permite ofrecer servicios de asignación dinámica de direcciones IP directamente desde la plataforma de red virtualizada, eliminando la necesidad de servidores DHCP externos. Puede ser configurado como un servidor o como proxy para reenviar solicitudes a servidores existentes, facilitando la gestión centralizada de direcciones IP en entornos virtuales.
+\subsection{Beneficios para la organización}
+\begin{itemize}
+  \item \textbf{Simplificación de la infraestructura:} Reduce la dependencia de servidores DHCP físicos o externos, consolidando la administración de red dentro del entorno NSX.
+  \item \textbf{Mayor agilidad en la provisión de servicios:} Permite asignar direcciones IP de forma automática y rápida a nuevas cargas de trabajo, sin intervención manual ni retrasos por integración externa.
+  \item \textbf{Reducción de errores y mayor control:} Facilita la trazabilidad y administración de rangos IP, reduciendo conflictos y mejorando la gobernanza de red.
+\end{itemize}
+\subsection{Dificultad de implementación}
+\paragraph{1 estrella}
+La configuración de NSX DHCP es directa y no genera impacto en la operación si se realiza correctamente. Se puede implementar rápidamente desde la consola de NSX y no requiere rediseño ni conocimientos avanzados. Es ideal para entornos que buscan simplificar la provisión de red desde una sola plataforma.
+%nsx-dhcp

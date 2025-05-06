@@ -1,0 +1,15 @@
+%aria-netops-performance
+\section{Aria Operations for Networks – Optimización de Rendimiento}
+\subsection{Descripción funcional}
+\paragraph{}
+Aria Operations for Networks permite identificar y corregir ineficiencias en la infraestructura de red que afectan el rendimiento de aplicaciones y servicios. A través de análisis de tráfico, latencia, rutas y carga entre componentes, la plataforma ofrece recomendaciones para mejorar la disponibilidad, eficiencia y experiencia del usuario final en entornos virtualizados, físicos y multicloud.
+\subsection{Beneficios para la organización}
+\begin{itemize}
+  \item \textbf{Mejora continua de la experiencia del usuario:} Detecta y soluciona degradaciones de rendimiento antes de que afecten a usuarios o procesos críticos del negocio.
+  \item \textbf{Optimización de infraestructura sin sobredimensionamiento:} Permite ajustar rutas, balanceo de carga o segmentación de tráfico basándose en datos reales, sin necesidad de adquirir recursos innecesarios.
+  \item \textbf{Soporte proactivo a equipos de operaciones:} Proporciona dashboards, alertas y análisis que permiten actuar con rapidez ante problemas de congestión, pérdida de paquetes o latencias elevadas.
+\end{itemize}
+\subsection{Dificultad de implementación}
+\paragraph{2 estrellas}
+Requiere integración con fuentes de datos de red (NetFlow/IPFIX, vCenter, NSX, nubes públicas), definición de umbrales de rendimiento y configuración de alertas. No implica rediseño estructural, pero sí coordinación con equipos de infraestructura y operaciones para interpretar métricas y ejecutar acciones correctivas basadas en las recomendaciones.
+%aria-netops-performance

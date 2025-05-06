@@ -1,0 +1,15 @@
+%aria-operations-remediation
+\section{Aria Operations – Remediación Inteligente}
+\subsection{Descripción funcional}
+\paragraph{}
+La funcionalidad de remediación inteligente en Aria Operations permite automatizar respuestas ante incidentes o condiciones de riesgo detectadas en el entorno. A través de políticas predefinidas y acciones automatizadas, el sistema puede corregir desviaciones de forma proactiva, reduciendo la necesidad de intervención manual y mejorando la estabilidad operativa.
+\subsection{Beneficios para la organización}
+\begin{itemize}
+  \item \textbf{Reducción de tiempos de respuesta ante incidentes:} Automatiza tareas correctivas como reinicios de servicios, redistribución de cargas o ajustes de configuración, evitando tiempos de inactividad prolongados.
+  \item \textbf{Menor dependencia del soporte reactivo:} Detecta condiciones anómalas y aplica soluciones de forma preventiva, disminuyendo la carga del equipo de TI y mejorando la disponibilidad del entorno.
+  \item \textbf{Mejora en la continuidad del negocio:} Contribuye a mantener la estabilidad de aplicaciones críticas al prevenir fallos antes de que escalen, reduciendo impactos técnicos y financieros.
+\end{itemize}
+\subsection{Dificultad de implementación}
+\paragraph{3 estrellas}
+La implementación de remediación inteligente requiere integración con sistemas externos mediante webhooks, API o herramientas como vRealize Orchestrator. Es necesario diseñar flujos de trabajo personalizados, validar escenarios y coordinar con distintas áreas de TI. Por su nivel de complejidad y criticidad, se recomienda la participación de consultores especializados en automatización y operación de infraestructura VMware.
+%aria-operations-remediation

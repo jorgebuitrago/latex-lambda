@@ -1,0 +1,15 @@
+%aria-netops-microsegmentation
+\section{Aria Operations for Networks – Planificación de Seguridad y Microsegmentación}
+\subsection{Descripción funcional}
+\paragraph{}
+Aria Operations for Networks permite planificar y validar políticas de microsegmentación en entornos NSX u otras plataformas de red, mediante el análisis detallado del tráfico entre aplicaciones y componentes. Ofrece visualizaciones de flujos este-oeste, sugerencias de políticas y simulaciones para aplicar controles de seguridad sin afectar la conectividad ni los servicios existentes.
+\subsection{Beneficios para la organización}
+\begin{itemize}
+  \item \textbf{Implementación segura de modelos Zero Trust:} Ayuda a definir y aplicar políticas precisas que restringen el acceso entre componentes a lo estrictamente necesario, reduciendo la superficie de ataque.
+  \item \textbf{Reducción del riesgo operativo:} La herramienta permite simular el impacto de las reglas de seguridad antes de aplicarlas, evitando errores que podrían interrumpir servicios críticos.
+  \item \textbf{Aceleración de auditorías y cumplimiento:} Genera visualizaciones y reportes que demuestran la segmentación efectiva y el cumplimiento de políticas, facilitando procesos regulatorios y de gobernanza de TI.
+\end{itemize}
+\subsection{Dificultad de implementación}
+\paragraph{2 estrellas}
+Requiere la recopilación de flujos de red, integración con NSX o dispositivos de seguridad y definición de las aplicaciones a segmentar. Si bien la plataforma automatiza gran parte del análisis, se necesita la participación de equipos de seguridad, redes y operaciones para validar reglas sugeridas y asegurar su correcta aplicación en el entorno productivo.
+%aria-netops-microsegmentation

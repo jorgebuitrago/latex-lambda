@@ -1,0 +1,15 @@
+%aria-automation-kubernetes
+\section{Aria Automation – Automatización de Kubernetes}
+\subsection{Descripción funcional}
+\paragraph{}
+Aria Automation permite automatizar el aprovisionamiento, configuración y gestión de clústeres Kubernetes en entornos on-premises (como vSphere with Tanzu) y en nubes públicas. A través de plantillas declarativas, los usuarios pueden solicitar clústeres Kubernetes de forma autoservicio, con integración a redes, almacenamiento y políticas de seguridad definidas por la organización.
+\subsection{Beneficios para la organización}
+\begin{itemize}
+  \item \textbf{Reducción de complejidad operativa:} Simplifica la entrega de clústeres Kubernetes listos para producción sin intervención manual, estandarizando procesos y reduciendo errores de configuración.
+  \item \textbf{Mayor velocidad y consistencia en el desarrollo:} Permite a los equipos de DevOps y desarrollo contar con entornos consistentes y listos para el despliegue de aplicaciones modernas en minutos.
+  \item \textbf{Gobernanza y cumplimiento en entornos de contenedores:} Integra políticas de red, seguridad y acceso desde el aprovisionamiento, garantizando que los entornos Kubernetes cumplan con los requisitos de la organización desde su creación.
+\end{itemize}
+\subsection{Dificultad de implementación}
+\paragraph{3 estrellas}
+Requiere conocimientos en automatización, integración con Tanzu o proveedores de nube, y comprensión de las necesidades de los equipos que consumen Kubernetes. La implementación incluye el diseño de plantillas, conectividad con clústeres y validación de recursos de red y almacenamiento. Se recomienda el acompañamiento de arquitectos de automatización y especialistas en plataformas de contenedores.
+%aria-automation-kubernetes
