@@ -1,0 +1,24 @@
+\begin{frame}{Cumplimiento y Regulación}
+\begin{tiny}
+Aria Operations incluye capacidades integradas de análisis de cumplimiento (compliance) que permiten evaluar si la configuración y operación del entorno VMware se alinean con estándares regulatorios y políticas internas. Utiliza reglas predefinidas y personalizables para detectar desviaciones en tiempo real y generar alertas sobre configuraciones que podrían poner en riesgo la seguridad o el cumplimiento normativo.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Reducción del riesgo de incumplimiento regulatorio:} Ayuda a cumplir con normativas como ISO 27001, PCI-DSS, HIPAA o GDPR, evitando sanciones y protegiendo la reputación de la organización.
+      \item \textbf{Visibilidad continua sobre el estado de cumplimiento:} Proporciona reportes automáticos y detallados sobre configuraciones no conformes, facilitando auditorías y procesos de revisión interna.
+      \item \textbf{Corrección proactiva de desviaciones:} Permite tomar acciones tempranas ante cambios o configuraciones fuera de política, antes de que representen un riesgo operativo o legal.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star$}
+    La activación de las capacidades de compliance requiere definir políticas de referencia, adaptar reglas a las necesidades específicas del entorno y generar alertas configurables. Aunque se basa en funcionalidades nativas de Aria Operations, es recomendable contar con la participación de los equipos de seguridad, cumplimiento y operaciones para alinear las políticas técnicas con los requisitos del negocio.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

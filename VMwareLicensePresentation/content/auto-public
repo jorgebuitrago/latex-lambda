@@ -1,0 +1,24 @@
+\begin{frame}{Integración con Nubes Públicas}
+\begin{tiny}
+Aria Automation permite integrar y gestionar recursos en múltiples nubes públicas como AWS, Microsoft Azure y Google Cloud Platform desde una única plataforma. Los usuarios pueden aprovisionar y administrar infraestructura, servicios y aplicaciones en nubes públicas utilizando catálogos unificados, políticas de gobernanza y automatización estandarizada, todo dentro del mismo flujo operativo que en entornos on-premises.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Unificación de operaciones multi-nube:} Ofrece una experiencia consistente en todas las plataformas, reduciendo la complejidad de gestionar entornos híbridos y distribuidos.
+      \item \textbf{Aceleración de la adopción de nube pública:} Permite consumir servicios de nube sin fricción, aprovechando catálogos predefinidos, flujos de aprobación y políticas corporativas ya existentes.
+      \item \textbf{Control de costos y cumplimiento:} Establece límites, etiquetas y políticas que evitan el consumo descontrolado en la nube, ayudando a mantener la visibilidad financiera y el cumplimiento de estándares técnicos y regulatorios.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star\star$}
+    La integración con nubes públicas requiere configurar credenciales seguras, endpoints, regiones y plantillas específicas para cada proveedor. También se deben mapear políticas, costos y flujos de trabajo a cada entorno. Es un proceso que requiere conocimiento técnico de cada plataforma de nube y experiencia en automatización multi-cloud, por lo que se recomienda la participación de arquitectos con experiencia en entornos híbridos.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

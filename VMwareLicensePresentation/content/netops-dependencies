@@ -1,0 +1,24 @@
+\begin{frame}{Análisis de dependencias de aplicaciones}
+\begin{tiny}
+Aria Operations for Networks permite descubrir, visualizar y analizar automáticamente las dependencias entre aplicaciones, servicios, máquinas virtuales y componentes de red. Esta capacidad proporciona un mapa dinámico y detallado del flujo de tráfico entre los distintos elementos que conforman una aplicación, facilitando la comprensión del impacto de cambios, migraciones o incidentes.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Reducción de riesgos en cambios y migraciones:} Al entender cómo se interconectan los componentes de una aplicación, se pueden planificar cambios sin interrumpir servicios críticos ni romper flujos de comunicación esenciales.
+      \item \textbf{Aceleración del troubleshooting y resolución de incidentes:} Facilita la identificación de puntos de falla y cuellos de botella al mostrar en tiempo real las rutas y dependencias entre elementos.
+      \item \textbf{Base para decisiones de arquitectura y seguridad:} Proporciona información clave para segmentar, proteger y escalar aplicaciones de forma eficiente, alineando la infraestructura con las necesidades reales del negocio.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star$}
+    La funcionalidad requiere integración con entornos virtuales y físicos, recopilación de flujos de red (NetFlow, IPFIX) y configuración de etiquetas o identificadores de aplicaciones. Aunque la herramienta automatiza gran parte del descubrimiento, es necesario el acompañamiento de equipos de infraestructura y operaciones para validar las dependencias y ajustarlas a la realidad organizacional.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

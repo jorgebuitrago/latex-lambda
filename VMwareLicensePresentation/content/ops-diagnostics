@@ -1,0 +1,24 @@
+\begin{frame}{VCF Operations Diagnostics}
+\begin{tiny}
+VCF Operations Diagnostics, anteriormente conocido como VMware Skyline, es una herramienta proactiva de soporte y diagnóstico que analiza de forma continua el estado del entorno VMware Cloud Foundation. Detecta configuraciones incorrectas, vulnerabilidades, riesgos potenciales y desviaciones respecto a las mejores prácticas, proporcionando recomendaciones automatizadas antes de que ocurran fallos.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Reducción de incidentes y fallas inesperadas:} Identifica problemas potenciales en la configuración y operación antes de que impacten la disponibilidad o el rendimiento del entorno.
+      \item \textbf{Mayor proactividad en el soporte:} Genera recomendaciones automatizadas alineadas con la base de conocimientos de VMware y mejora la calidad de las interacciones con el soporte técnico.
+      \item \textbf{Optimización continua de la plataforma:} Permite mantener el entorno VCF alineado con mejores prácticas técnicas, reduciendo el riesgo operativo y extendiendo la vida útil de la infraestructura.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star$}
+    La activación de Operations Diagnostics es sencilla y no genera impacto en la operación. Solo requiere vincular el entorno con VMware Support y habilitar la recopilación segura de datos. Es una funcionalidad pensada para facilitar la adopción de operaciones proactivas sin complejidad técnica ni necesidad de rediseño.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

@@ -1,0 +1,110 @@
+\documentclass{beamer}
+\usetheme{CambridgeUS}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage[spanish]{babel}
+
+%Set Variables
+\newcommand{\customer}{BlackRock Entertainment}
+
+% Define custom color
+\definecolor{klaudcolour1}{RGB}{57, 83, 104}
+\definecolor{klaudcolour2}{RGB}{28, 143, 159}
+\definecolor{klaudcolour3}{RGB}{113,173, 168}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=klaudcolour2,       % color of URL links
+  linkcolor=klaudcolour1,      % color of internal links (like frame titles)
+  pdfborder={0 0 0}    % no border around links
+}
+
+% Apply color scheme
+\setbeamercolor{normal text}{bg=white, fg=black}
+\setbeamercolor{palette primary}{bg=klaudcolour1, fg=white}
+\setbeamercolor{frametitle}{bg=klaudcolour1, fg=white}
+\setbeamercolor{title}{fg=klaudcolour1}
+\setbeamercolor{klaudleft}{bg=klaudcolour1, fg=white}
+\setbeamercolor{klaudmiddle}{bg=klaudcolour2, fg=black}
+\setbeamercolor{klaudright}{bg=klaudcolour3, fg=black}
+
+% Global font: sans serif
+\renewcommand{\familydefault}{\sfdefault}
+\setbeamerfont{title}{size=\LARGE, series=\bfseries}
+\setbeamerfont{normal text}{size=\normalsize}
+
+\setbeamertemplate{headline}{}         % Disable unwanted theme header
+\setbeamertemplate{navigation symbols}{}  % Optional: remove nav dots
+
+% Logo on top-right
+\setbeamertemplate{frametitle}{
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1cm,dp=0.25cm, leftskip=1em, rightskip=1em]{frametitle}
+    \usebeamerfont{frametitle}
+    \insertframetitle
+    \hfill
+    \includegraphics[height=0.8cm]{logo.png}
+  \end{beamercolorbox}
+}
+
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.33\paperwidth,ht=2.5ex,dp=1ex,center]{klaudleft}
+      \usebeamerfont{author in head/foot}\insertshortauthor
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.34\paperwidth,ht=2.5ex,dp=1ex,center]{klaudmiddle}
+      \usebeamerfont{title in head/foot}\insertshorttitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.33\paperwidth,ht=2.5ex,dp=1ex,center]{klaudright}
+      \usebeamerfont{date in head/foot}\insertshortdate
+    \end{beamercolorbox}%
+  }%
+}
+
+\AtBeginSection[]{
+  \begin{frame}{Contenido}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\title{Diagnóstico de Licenciamiento VMware}
+\author{Equipo de Consultoría de Klaud}
+\date{\today}
+
+\begin{document}
+
+% Title Slide
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% Agenda / Index
+\begin{frame}
+  \tableofcontents
+\end{frame}
+
+\section{Introducción}
+
+% Content Slide 1
+\begin{frame}{Introducción}
+
+\begin{center}
+Este reporte ha sido desarrollado especialmente para \textbf{\customer} y revela funcionalidades, servicios y capacidades de VMware que ya están incluidas en tus licencias actuales, pero que hoy no estás aprovechando al máximo. Encontrarás oportunidades concretas para reducir costos, mejorar la eficiencia operativa y fortalecer tu infraestructura, todo a partir de lo que ya tienes contratado. Una guía clara para transformar inversión desaprovechada en resultados tangibles.
+\end{center}
+
+\end{frame}
+
+\begin{frame}{Objetivo}
+
+\begin{center}
+
+Detrás de cada licencia subutilizada hay una oportunidad latente de generar mayor valor para la operación. Este reporte pone en evidencia áreas clave dentro del entorno virtual de \customer\ que, con una integración adecuada, pueden traducirse en mejoras reales en eficiencia operativa, tiempos de respuesta y visibilidad sobre la infraestructura.
+
+\vspace{1em}
+
+Más allá de reducir costos innecesarios, estas recomendaciones están diseñadas para ayudarte a maximizar el retorno de la inversión ya realizada y convertir capacidades técnicas desaprovechadas en resultados tangibles para el negocio.
+\end{center}
+\end{frame}

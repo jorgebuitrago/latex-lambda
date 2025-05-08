@@ -1,0 +1,24 @@
+\begin{frame}{vSphere Orchestration and Automation}
+\begin{tiny}
+vSphere Orchestration and Automation permite automatizar tareas repetitivas, flujos de trabajo complejos y la provisión de recursos dentro del entorno virtualizado. Utilizando herramientas como vRealize Orchestrator, vSphere PowerCLI o incluso funcionalidades nativas de vSphere, se estandarizan procesos, se reducen errores humanos y se aceleran los tiempos de entrega de servicios.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Reducción de costos operativos:} La automatización de tareas administrativas disminuye la carga de trabajo manual, optimiza el uso del talento técnico y reduce el tiempo dedicado a tareas repetitivas.
+      \item \textbf{Aceleración del time-to-market:} Permite desplegar servicios y recursos en menor tiempo, lo cual es clave para iniciativas de negocio que demandan agilidad y capacidad de respuesta rápida.
+      \item \textbf{Mayor consistencia y menor riesgo operativo:} Los procesos automatizados reducen la variabilidad en la ejecución y minimizan errores que podrían impactar la disponibilidad o el rendimiento del entorno.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star$}
+    La implementación requiere identificar procesos candidatos a ser automatizados, diseñar flujos de trabajo y realizar pruebas de validación. Aunque no implica rediseño arquitectónico, es recomendable contar con especialistas en automatización y conocimiento de las herramientas de orquestación de VMware.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

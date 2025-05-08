@@ -1,0 +1,24 @@
+\begin{frame}{Monitoreo y Análisis de Desempeño}
+\begin{tiny}
+Aria Operations (anteriormente vRealize Operations) proporciona capacidades avanzadas de monitoreo y análisis predictivo para entornos virtualizados y multi-nube. Recolecta métricas en tiempo real, identifica cuellos de botella, analiza tendencias de uso y rendimiento, y genera recomendaciones automatizadas para mantener la salud y eficiencia de la infraestructura.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Mejora continua del rendimiento:} Permite identificar y resolver proactivamente problemas de capacidad o desempeño antes de que impacten a usuarios o aplicaciones críticas.
+      \item \textbf{Optimización de costos y recursos:} Ayuda a detectar recursos sobredimensionados o subutilizados, permitiendo ajustar la infraestructura para reducir costos operativos y mejorar el retorno de inversión.
+      \item \textbf{Mayor visibilidad y control operativo:} Proporciona una vista centralizada y en tiempo real del estado de la infraestructura, facilitando decisiones ágiles y fundamentadas para TI y negocio.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star$}
+    Requiere despliegue de Aria Operations, integración con vCenter y otros endpoints, y configuración inicial de dashboards y alertas. Aunque no requiere rediseño arquitectónico, se recomienda planificación adecuada y participación de personal con experiencia en monitoreo y administración de entornos VMware.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

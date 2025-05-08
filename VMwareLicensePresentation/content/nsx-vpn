@@ -1,0 +1,24 @@
+\begin{frame}{NSX L2/L3 VPN}
+\begin{tiny}
+NSX permite establecer túneles VPN de capa 2 (L2) y capa 3 (L3) para extender redes o conectar sitios remotos de forma segura sobre redes IP. L2 VPN facilita la movilidad de cargas manteniendo el mismo esquema de direccionamiento entre sitios, mientras que L3 VPN permite enrutar tráfico entre redes distintas. Ambas opciones permiten una conectividad cifrada sin depender de soluciones externas.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Extensión de redes entre sitios sin rediseño:} L2 VPN permite mover cargas de trabajo entre data centers o nubes sin necesidad de modificar direcciones IP o configurar reglas complejas.
+      \item \textbf{Conectividad segura entre entornos remotos:} L3 VPN ofrece integración cifrada con sucursales, nubes públicas o partners, sin necesidad de dispositivos VPN físicos adicionales.
+      \item \textbf{Flexibilidad en estrategias de migración y recuperación:} Facilita escenarios de migración en caliente, recuperación ante desastres y entornos híbridos con menor complejidad técnica y operativa.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star$}
+    La configuración de VPNs en NSX requiere definir gateways, establecer parámetros de túneles y validar rutas entre sitios. Si bien es una funcionalidad integrada, implica coordinación de red, seguridad y pruebas de conectividad. Se recomienda la participación de especialistas con experiencia en networking y entornos distribuidos.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

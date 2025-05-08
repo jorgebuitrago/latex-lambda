@@ -1,0 +1,24 @@
+\begin{frame}{IaC (Infrastructure as Code)}
+\begin{tiny}
+Aria Automation permite definir y gestionar infraestructura mediante código, utilizando plantillas declarativas escritas en YAML (Cloud Templates). Esta funcionalidad permite tratar la infraestructura como software, habilitando versiones, reutilización de componentes, pruebas automatizadas y una mayor integración con procesos DevOps. Facilita además la integración con herramientas externas como Git, Terraform y Ansible.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Mayor consistencia y reducción de errores:} Al definir la infraestructura como código, se eliminan configuraciones manuales propensas a errores y se garantiza la repetibilidad de los entornos.
+      \item \textbf{Aceleración del desarrollo y despliegue:} Facilita la integración con pipelines CI/CD y mejora la velocidad con la que se puede entregar infraestructura a los equipos de desarrollo y operaciones.
+      \item \textbf{Mejor gobernanza y trazabilidad:} Las definiciones quedan documentadas en repositorios de código, permitiendo control de versiones, auditoría y revisión colaborativa de cambios en la infraestructura.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star\star$}
+    Requiere conocimientos avanzados en modelado de infraestructura, manejo de herramientas de automatización y prácticas DevOps. La implementación efectiva implica definir una estrategia de repositorios, estandarización de plantillas y flujos de trabajo integrados. Se recomienda contar con arquitectos de automatización y especialistas en DevOps para lograr una adopción estructurada y escalable.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

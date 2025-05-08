@@ -1,0 +1,24 @@
+\begin{frame}{vSphere Kubernetes Service}
+\begin{tiny}
+vSphere Kubernetes Service permite ejecutar contenedores y aplicaciones modernas sobre la misma plataforma que ya gestiona tus máquinas virtuales, integrando Kubernetes de forma nativa en el entorno VMware. Esto habilita a tu organización para gestionar cargas tradicionales y nativas de la nube desde una infraestructura unificada, optimizando recursos y acelerando el despliegue de aplicaciones.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Reducción de costos de infraestructura y licenciamiento:} Permite consolidar cargas virtuales y contenerizadas en un mismo entorno, evitando el uso de plataformas separadas o múltiples nubes públicas. Esto disminuye los gastos operativos y licencias duplicadas.
+      \item \textbf{Agilidad en desarrollo y provisión de servicios:} Acelera la entrega de aplicaciones gracias al autoservicio y automatización que ofrece Kubernetes, integrándose con pipelines DevOps existentes.
+      \item \textbf{Escalabilidad y modernización de aplicaciones:} Facilita la evolución hacia arquitecturas modernas sin necesidad de reemplazar la infraestructura actual, habilitando a la organización para escalar servicios digitales de manera controlada y eficiente.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star\star$}
+    Este servicio requiere rediseño de arquitectura, habilitación de Workload Management en vSphere, configuración de namespaces, redes y almacenamiento compatible. Involucra decisiones estratégicas sobre la adopción de contenedores y puede necesitar migraciones o refactorización de aplicaciones. Se recomienda contar con arquitectos certificados y un equipo técnico preparado para operar entornos Kubernetes de forma segura.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

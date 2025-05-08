@@ -1,0 +1,24 @@
+\begin{frame}{Gestión Inteligente de Logs}
+\begin{tiny}
+Aria Operations for Logs (anteriormente vRealize Log Insight) proporciona una plataforma centralizada e inteligente para la recolección, análisis y correlación de logs generados por infraestructura, aplicaciones y servicios en entornos VMware y multi-nube. Su motor de análisis permite detectar patrones, generar alertas automáticas y acelerar la resolución de problemas operativos y de seguridad.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Mayor visibilidad y trazabilidad operacional:} Reúne en un solo punto los registros de toda la infraestructura, permitiendo un análisis rápido y contextual de incidentes o anomalías.
+      \item \textbf{Reducción del tiempo medio de resolución (MTTR):} Correlaciona eventos automáticamente, identificando la causa raíz de problemas en menos tiempo y mejorando la eficiencia operativa.
+      \item \textbf{Apoyo en cumplimiento y auditorías:} Permite retener, consultar y exportar logs relevantes para controles de seguridad, normativas internas y revisiones externas de cumplimiento.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star$}
+    Requiere desplegar Aria Operations for Logs, integrar fuentes de log (como vCenter, ESXi, NSX, sistemas operativos, firewalls), y definir dashboards, consultas y alertas. Aunque es una solución flexible y escalable, su valor se maximiza cuando se personaliza para las necesidades operativas específicas, por lo que se recomienda la participación de administradores de TI y equipos de seguridad.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

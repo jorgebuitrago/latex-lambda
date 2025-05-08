@@ -1,0 +1,24 @@
+\begin{frame}{Automatización de Redes y Seguridad}
+\begin{tiny}
+Aria Automation permite automatizar la provisión y configuración de redes, balanceadores, firewalls y políticas de seguridad como parte del ciclo de vida completo de la infraestructura. Se integra con NSX y otras soluciones de red para entregar conectividad, segmentación y seguridad de forma dinámica, basada en políticas predefinidas, lo que garantiza consistencia y cumplimiento desde el primer día.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Provisión rápida y segura de entornos:} Elimina los cuellos de botella generados por la configuración manual de redes y seguridad, permitiendo entregar entornos completos con políticas aplicadas automáticamente.
+      \item \textbf{Consistencia y cumplimiento normativo:} Asegura que todas las configuraciones de red y seguridad cumplan con los estándares de la organización, reduciendo el riesgo de errores humanos y brechas operativas.
+      \item \textbf{Mayor eficiencia operativa y reducción de dependencias:} Automatiza tareas normalmente realizadas por equipos especializados, liberando recursos y acelerando la entrega de servicios de TI.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star\star$}
+    La automatización de redes y seguridad requiere integraciones profundas con NSX y otros componentes del ecosistema, así como la definición de políticas complejas, roles y flujos de aprobación. También se necesita modelar servicios de red en plantillas declarativas y validarlos con múltiples equipos. Se recomienda la participación de arquitectos de red, especialistas en seguridad y consultores de automatización.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

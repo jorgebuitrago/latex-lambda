@@ -1,0 +1,24 @@
+\begin{frame}{vSphere Replication}
+\begin{tiny}
+vSphere Replication es una solución nativa de VMware para replicar máquinas virtuales entre hosts o sitios, permitiendo la recuperación ante desastres sin necesidad de soluciones de terceros. Facilita la creación de réplicas programadas de VMs, con objetivos de punto de recuperación (RPO) flexibles, desde minutos hasta horas, según las necesidades del negocio.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Reducción del riesgo de pérdida de datos:} Al replicar las VMs en otro host o sitio, se asegura la disponibilidad de información y servicios ante fallas mayores, desastres naturales o errores críticos.
+      \item \textbf{Optimización de costos de recuperación:} Evita inversiones en soluciones de terceros al ofrecer capacidades de protección integradas, con menor complejidad y sin costos adicionales por VM replicada.
+      \item \textbf{Mejora en la resiliencia operativa:} Proporciona una capa adicional de continuidad de negocio al permitir recuperar servicios clave en cuestión de minutos u horas, según la configuración del RPO.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star$}
+    La implementación requiere planificación, configuración de sitios origen y destino, y validación del entorno de red y almacenamiento. Aunque no implica rediseño arquitectónico, es necesario coordinar ventanas de configuración y pruebas. Se recomienda el acompañamiento de personal con experiencia en recuperación ante desastres en entornos VMware.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

@@ -1,0 +1,24 @@
+\begin{frame}{NSX NAT (Network Address Translation)}
+\begin{tiny}
+NSX NAT permite traducir direcciones IP entre redes internas y externas, facilitando el control del tráfico que ingresa y sale del entorno virtualizado. Soporta tanto Source NAT (SNAT) como Destination NAT (DNAT), lo que permite exponer servicios internos de manera segura y controlar el acceso a recursos internos desde redes externas o internet.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Mayor seguridad en la exposición de servicios:} Permite controlar de forma precisa qué servicios internos pueden ser accedidos desde el exterior, reduciendo la superficie de ataque.
+      \item \textbf{Optimización del uso de direcciones IP públicas:} Al permitir compartir una o pocas IP públicas para múltiples servicios internos, se reduce la necesidad de bloques de IP adicionales.
+      \item \textbf{Control granular del tráfico:} Combinado con otras capacidades de NSX como firewall y segmentación, NAT permite definir rutas y accesos específicos para cada aplicación o entorno.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star$}
+    La configuración de reglas NAT en NSX es sencilla y no requiere rediseño de red ni impacto operativo si se planifica adecuadamente. Puede ser realizada por personal con experiencia básica en redes y administración de NSX, y suele aplicarse como parte de la publicación de servicios o configuraciones de acceso externo.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

@@ -1,0 +1,24 @@
+\begin{frame}{NSX Routing}
+\begin{tiny}
+NSX Routing permite administrar el enrutamiento dentro de entornos virtualizados utilizando routers distribuidos y gateways de servicios. Soporta enrutamiento dinámico mediante BGP y OSPF, así como rutas estáticas, facilitando la conectividad tanto este-oeste (entre VMs) como norte-sur (entre VMs y redes externas). La funcionalidad distribuida elimina cuellos de botella al permitir que el enrutamiento ocurra directamente en cada host.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Mayor rendimiento y eficiencia operativa:} El enrutamiento distribuido reduce la latencia y evita la dependencia de dispositivos centralizados, lo que mejora el desempeño de aplicaciones críticas.
+      \item \textbf{Escalabilidad sin rediseño físico:} Permite crecer el entorno de red virtual sin necesidad de cambios estructurales en el core de red físico ni ampliación de equipamiento dedicado.
+      \item \textbf{Flexibilidad y control sobre la arquitectura de red:} Facilita configuraciones avanzadas, segmentación por niveles, alta disponibilidad y conexión directa a servicios externos usando protocolos estándar como BGP y OSPF.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star\star$}
+    La configuración de routing en NSX requiere un diseño integral de la arquitectura de red, integración con la red física, y coordinación con los equipos responsables del core de red. La implementación debe considerar redundancia, anuncios de rutas, balanceo y políticas de tráfico. Se requiere participación de arquitectos de red y especialistas certificados en NSX.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

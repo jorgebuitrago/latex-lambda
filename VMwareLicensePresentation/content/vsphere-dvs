@@ -1,0 +1,24 @@
+\begin{frame}{vSphere Distributed Switch}
+\begin{tiny}
+vSphere Distributed Switch (VDS) permite administrar la red virtual de manera centralizada en múltiples hosts, estandarizando la configuración de red, mejorando la visibilidad del tráfico y simplificando la operación. Es una solución avanzada frente al switch estándar, ideal para entornos que requieren consistencia, rendimiento y escalabilidad en redes virtuales.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Reducción de errores operativos y tiempos de configuración:} Al centralizar la administración de red, se minimizan errores manuales y se agiliza la configuración de nuevos hosts o clústeres, reduciendo el esfuerzo operativo.
+      \item \textbf{Mayor control y visibilidad:} Ofrece herramientas avanzadas de monitoreo, calidad de servicio (QoS) y control del tráfico, lo que permite una gestión proactiva de la red virtual y mejor toma de decisiones.
+      \item \textbf{Optimización de recursos y continuidad del negocio:} Mejora el rendimiento y la estabilidad de las comunicaciones entre cargas de trabajo, lo que impacta directamente en la disponibilidad y eficiencia de aplicaciones críticas.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star$}
+    La implementación de VDS requiere planificación, cambios en la configuración de red y puede implicar ventanas de mantenimiento. Aunque no suele generar downtime si se ejecuta correctamente, se recomienda el apoyo de personal especializado para garantizar una migración segura desde switches estándar.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

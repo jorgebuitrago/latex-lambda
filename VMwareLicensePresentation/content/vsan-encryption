@@ -1,0 +1,24 @@
+\begin{frame}{vSAN Encryption (At Rest y In Transit)}
+\begin{tiny}
+vSAN Encryption ofrece protección avanzada de datos mediante cifrado en dos niveles: en reposo (at rest) y en tránsito (in transit). El cifrado en reposo asegura que los datos almacenados en los discos no puedan ser leídos sin autorización, mientras que el cifrado en tránsito protege la comunicación entre nodos del clúster, evitando accesos no autorizados o interceptación de datos durante la transmisión.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Refuerzo de la seguridad y cumplimiento normativo:} Protege datos sensibles contra accesos no autorizados, ayudando a cumplir con estándares como ISO 27001, GDPR, HIPAA, entre otros.
+      \item \textbf{Reducción del riesgo operativo:} Minimiza el impacto potencial de incidentes relacionados con fuga de datos o accesos indebidos a la infraestructura de almacenamiento.
+      \item \textbf{Protección integral sin afectar las aplicaciones:} El cifrado es transparente para las máquinas virtuales y no requiere modificaciones en los sistemas o aplicaciones existentes.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star$}
+    La activación del cifrado en vSAN requiere una infraestructura compatible con un servidor de claves (KMS) y puede implicar reconfiguración de clústeres y políticas de almacenamiento. Aunque no requiere rediseño completo, se recomienda una planificación cuidadosa y el apoyo de personal con experiencia en seguridad y almacenamiento en entornos VMware.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

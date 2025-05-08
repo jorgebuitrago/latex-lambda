@@ -1,0 +1,24 @@
+\begin{frame}{Detección y Correción de Anomalías}
+\begin{tiny}
+Aria Operations for Networks utiliza análisis avanzado de tráfico y comportamiento para detectar anomalías en tiempo real, identificar cuellos de botella, rutas inusuales o degradación de servicios, y facilitar la resolución proactiva de problemas en entornos complejos. Proporciona alertas inteligentes y recomendaciones basadas en datos históricos, topología de red y dependencias de aplicaciones.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Reducción del tiempo de diagnóstico y resolución:} Detecta patrones anómalos automáticamente y guía a los equipos hacia la causa raíz del problema, evitando largos procesos de análisis manual.
+      \item \textbf{Prevención de interrupciones en servicios críticos:} Al identificar comportamientos fuera de lo normal antes de que se conviertan en incidentes, permite actuar proactivamente y mantener la continuidad operativa.
+      \item \textbf{Mayor visibilidad para soporte y equipos técnicos:} Brinda contexto completo sobre el estado de la red, tráfico entre componentes y eventos recientes, facilitando la colaboración entre equipos de redes, seguridad y operaciones.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star$}
+    La habilitación de esta funcionalidad requiere integración con flujos de red (NetFlow, IPFIX), definición de umbrales y patrones esperados, y configuración de alertas. No requiere rediseño de infraestructura, pero sí coordinación entre áreas técnicas para interpretar correctamente las anomalías y ajustar las respuestas automáticas o manuales recomendadas.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

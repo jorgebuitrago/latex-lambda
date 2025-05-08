@@ -1,0 +1,46 @@
+
+\section{Conclusión}
+
+% Final Slide with Conclusion
+\begin{frame}{Conclusión}
+Lo que has visto hasta aquí revela un potencial claro: GoTech ya cuenta con licencias capaces de generar mayor eficiencia operativa, ahorros tangibles y un mejor retorno sin necesidad de nuevas inversiones. Todo depende de cómo se activen y alineen esas capacidades.
+
+\vspace{1em}
+
+Pero este diagnóstico es solo el inicio. Las verdaderas oportunidades aparecen cuando se traduce esta visión en un plan ajustado a tu realidad. ¿El siguiente paso? Es justo lo que viene a continuación...
+\end{frame}
+
+\begin{frame}{Siguientes Pasos}
+¿Listos para activar todo el valor oculto en tu entorno VMware?
+Nuestro equipo de servicios profesionales está listo para ayudarte a aterrizar cada recomendación presentada y convertir este diagnóstico en resultados concretos para tu operación.
+
+\vspace{1em}
+
+\begin{center}
+\textbf{Pongamos en marcha un plan a la medida de \customer.
+Contáctanos y llevemos esta oportunidad al siguiente nivel.}
+\end{center}
+
+\end{frame}
+
+% Closing Slide
+{
+  \setbeamertemplate{footline}{} % temporarily disable footer
+  \begin{frame}
+   \centering
+   \includegraphics[width=0.3\linewidth]{logo2.png} \\[1.5em]
+    \Huge Gracias por tu tiempo!\\[1em]
+
+    \large Esperamos que esta presentación haya sido útil para identificar nuevas oportunidades en tu entorno VMware. \\[1em]
+
+    \large Te estaremos contactando en los próximos días para agendar una reunión y definir juntos los siguientes pasos. \\[2em]
+
+    \normalsize
+
+    \href{https://www.klaudservices.com}{ klaudservices.com} \\
+\href{mailto:servicios@klaud.com.co}{servicios@klaud.com.co}
+
+  \end{frame}
+}
+
+\end{document}

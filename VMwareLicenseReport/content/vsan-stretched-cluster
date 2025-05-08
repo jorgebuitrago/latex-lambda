@@ -6,7 +6,7 @@ vSAN Stretched Cluster permite extender un único clúster vSAN entre dos ubicac
 \subsection{Beneficios para la organización}
 \begin{itemize}
   \item \textbf{Alta disponibilidad ante desastres:} Asegura la continuidad de los servicios críticos incluso si un sitio completo queda fuera de operación, reduciendo riesgos operativos y financieros.
-  \item \textbf>Optimización de infraestructura existente en múltiples sedes:} Permite aprovechar recursos físicos distribuidos sin necesidad de soluciones de almacenamiento externo ni replicación adicional.
+  \item \textbf{Optimización de infraestructura existente en múltiples sedes:} Permite aprovechar recursos físicos distribuidos sin necesidad de soluciones de almacenamiento externo ni replicación adicional.
   \item \textbf{Reducción del tiempo de recuperación y pérdida de datos:} Minimiza el Recovery Time Objective (RTO) y el Recovery Point Objective (RPO) al mantener sincronización activa entre sedes, lo cual impacta directamente en la resiliencia del negocio.
 \end{itemize}
 \subsection{Dificultad de implementación}

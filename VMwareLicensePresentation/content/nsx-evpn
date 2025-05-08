@@ -1,0 +1,24 @@
+\begin{frame}{NSX EVPN (Ethernet VPN)}
+\begin{tiny}
+NSX EVPN permite la extensión de redes de capa 2 sobre una infraestructura de capa 3 utilizando estándares abiertos como BGP-EVPN y VXLAN/Geneve. Facilita la integración de NSX con redes físicas bajo arquitecturas de data center modernas (como spine-leaf), ofreciendo interoperabilidad con switches de red tradicionales, movilidad de cargas de trabajo y una conectividad segura y eficiente entre dominios virtuales y físicos.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Interoperabilidad con la red física:} Permite extender VLANs entre entornos físicos y virtuales, facilitando la integración con infraestructuras existentes sin rediseños costosos.
+      \item \textbf{Mayor flexibilidad y continuidad operativa:} Soporta movilidad de máquinas virtuales entre dominios geográficamente distribuidos o entre clústeres, manteniendo las mismas direcciones IP y conectividad.
+      \item \textbf{Escalabilidad basada en estándares:} Facilita arquitecturas de red modernas y escalables (como spine-leaf), utilizando protocolos estándar como BGP-EVPN, lo cual mejora la sostenibilidad a largo plazo y reduce la dependencia de soluciones propietarias.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star\star$}
+    La implementación de EVPN requiere coordinación entre la infraestructura de red física y el entorno NSX, configuración de protocolos BGP y encapsulamiento Geneve/VXLAN, y un diseño preciso de integración entre dominios. Se recomienda la participación de arquitectos de red y especialistas en NSX y data center networking para una integración segura y funcional.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

@@ -1,0 +1,24 @@
+\begin{frame}{Análisis y Operación de Redes Multicloud}
+\begin{tiny}
+Aria Operations for Networks permite extender la visibilidad, análisis y monitoreo de redes a entornos multicloud como AWS, Microsoft Azure y Google Cloud Platform. Proporciona mapas de conectividad, análisis de tráfico, dependencias entre cargas y validación de políticas de seguridad en arquitecturas híbridas y distribuidas, unificando la gestión operativa de la red desde una sola plataforma.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Visibilidad unificada de redes híbridas y multicloud:} Permite monitorear, analizar y correlacionar tráfico y conectividad entre on-premises y nubes públicas desde una sola consola.
+      \item \textbf{Detección y resolución rápida de problemas en entornos distribuidos:} Ayuda a identificar fallas, errores de configuración o rutas ineficientes en redes complejas con múltiples proveedores.
+      \item \textbf{Alineación con políticas de seguridad y cumplimiento:} Verifica que la conectividad entre entornos cumple con las políticas de segmentación, acceso y gobernanza establecidas por la organización.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star\star$}
+    La implementación requiere integración con APIs de nubes públicas, configuración de colectores, autenticación segura y definición de entornos multicloud. Es necesario un conocimiento detallado de las arquitecturas de red en cada nube y coordinación entre equipos de red, seguridad y cloud. Se recomienda contar con arquitectos multicloud y especialistas en observabilidad para su despliegue efectivo.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

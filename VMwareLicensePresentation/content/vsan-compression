@@ -1,0 +1,24 @@
+\begin{frame}{vSAN Data Compression}
+\begin{tiny}
+vSAN Data Compression es una funcionalidad que reduce el tamaño de los datos almacenados al eliminar redundancias, optimizando el uso del espacio disponible en el clúster. Se aplica de forma transparente al usuario y está diseñada para mejorar la eficiencia sin comprometer el rendimiento de las cargas de trabajo.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Reducción de costos en almacenamiento:} Al disminuir el volumen de datos físicos almacenados, se prolonga la vida útil del hardware y se evita la compra anticipada de capacidad adicional.
+      \item \textbf{Mayor eficiencia operativa:} Mejora la densidad del almacenamiento sin requerir cambios en las aplicaciones o en la operación del entorno, facilitando la administración del espacio.
+      \item \textbf{Optimización de la infraestructura existente:} Permite alojar más máquinas virtuales y datos en el mismo hardware, aumentando el retorno de la inversión en infraestructura.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star$}
+    Activar la compresión requiere modificar la política de almacenamiento y aplicar cambios a nivel de clúster. Puede implicar una reconfiguración o evacuación de datos temporal. Aunque no requiere rediseño, se recomienda realizarlo en ventanas planificadas y contar con personal con experiencia en vSAN.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

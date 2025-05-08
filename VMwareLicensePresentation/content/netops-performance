@@ -1,0 +1,24 @@
+\begin{frame}{Optimización de Rendimiento}
+\begin{tiny}
+Aria Operations for Networks permite identificar y corregir ineficiencias en la infraestructura de red que afectan el rendimiento de aplicaciones y servicios. A través de análisis de tráfico, latencia, rutas y carga entre componentes, la plataforma ofrece recomendaciones para mejorar la disponibilidad, eficiencia y experiencia del usuario final en entornos virtualizados, físicos y multicloud.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Mejora continua de la experiencia del usuario:} Detecta y soluciona degradaciones de rendimiento antes de que afecten a usuarios o procesos críticos del negocio.
+      \item \textbf{Optimización de infraestructura sin sobredimensionamiento:} Permite ajustar rutas, balanceo de carga o segmentación de tráfico basándose en datos reales, sin necesidad de adquirir recursos innecesarios.
+      \item \textbf{Soporte proactivo a equipos de operaciones:} Proporciona dashboards, alertas y análisis que permiten actuar con rapidez ante problemas de congestión, pérdida de paquetes o latencias elevadas.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star$}
+    Requiere integración con fuentes de datos de red (NetFlow/IPFIX, vCenter, NSX, nubes públicas), definición de umbrales de rendimiento y configuración de alertas. No implica rediseño estructural, pero sí coordinación con equipos de infraestructura y operaciones para interpretar métricas y ejecutar acciones correctivas basadas en las recomendaciones.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

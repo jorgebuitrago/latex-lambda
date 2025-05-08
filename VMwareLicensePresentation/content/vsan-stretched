@@ -1,0 +1,24 @@
+\begin{frame}{vSAN Stretched Cluster}
+\begin{tiny}
+vSAN Stretched Cluster permite extender un único clúster vSAN entre dos ubicaciones geográficas distintas, manteniendo alta disponibilidad de datos y servicios ante fallas totales en uno de los sitios. A través de sincronización activa y tolerancia a fallos de sitio, garantiza continuidad operativa con mínima pérdida de datos.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Alta disponibilidad ante desastres:} Asegura la continuidad de los servicios críticos incluso si un sitio completo queda fuera de operación, reduciendo riesgos operativos y financieros.
+      \item \textbf{Optimización de infraestructura existente en múltiples sedes:} Permite aprovechar recursos físicos distribuidos sin necesidad de soluciones de almacenamiento externo ni replicación adicional.
+      \item \textbf{Reducción del tiempo de recuperación y pérdida de datos:} Minimiza el Recovery Time Objective (RTO) y el Recovery Point Objective (RPO) al mantener sincronización activa entre sedes, lo cual impacta directamente en la resiliencia del negocio.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star\star$}
+    La implementación requiere diseño e infraestructura en al menos dos sitios físicos, configuración avanzada de redes, sincronización de latencia baja y presencia de un tercer sitio o witness para quorum. Es un proyecto complejo que debe ser liderado por arquitectos de soluciones certificados en VMware con experiencia en continuidad de negocio y diseño multi-sede.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

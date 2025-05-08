@@ -1,0 +1,24 @@
+\begin{frame}{vSphere Fault Tolerance}
+\begin{tiny}
+vSphere Fault Tolerance (FT) proporciona alta disponibilidad continua para máquinas virtuales críticas mediante la creación de una réplica activa sincronizada en un host diferente. Si el host principal falla, la réplica asume automáticamente la operación sin pérdida de datos, sin reinicios y sin interrupción del servicio.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Eliminación del downtime en servicios críticos:} Garantiza la continuidad total de operación de aplicaciones sensibles, evitando reinicios o pérdida de sesiones ante fallos de hardware.
+      \item \textbf{Reducción del riesgo financiero y reputacional:} Protege procesos clave del negocio que no pueden permitirse interrupciones, evitando costos asociados a caídas del sistema y mejorando la experiencia del cliente interno o externo.
+      \item \textbf{Mejora en la disponibilidad sin necesidad de soluciones externas:} Implementa tolerancia a fallos directamente desde la plataforma VMware, sin requerir licencias o tecnologías de terceros.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star$}
+    La configuración de Fault Tolerance requiere planificación, revisión de compatibilidades de red y almacenamiento, y validación de recursos suficientes en el clúster. No implica rediseño mayor, pero sí necesita pruebas previas y monitoreo activo. Se recomienda la intervención de personal con experiencia en HA/FT de VMware para una implementación controlada.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}

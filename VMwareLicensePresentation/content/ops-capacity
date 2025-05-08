@@ -1,0 +1,24 @@
+\begin{frame}{Gestión de Capacidad}
+\begin{tiny}
+Aria Operations ofrece capacidades de planificación y gestión de capacidad que permiten analizar la utilización actual de recursos, predecir necesidades futuras y modelar escenarios de crecimiento. A través de algoritmos predictivos, proporciona recomendaciones para evitar sobreaprovisionamiento, prevenir saturaciones y planificar nuevas inversiones de forma informada.
+
+\begin{columns}
+  % Left column – Beneficios
+  \column{0.6\textwidth}
+  \begin{exampleblock}{Beneficios para \customer}
+    \begin{itemize}
+      \item \textbf{Reducción de costos por sobreaprovisionamiento:} Identifica recursos infrautilizados que pueden ser reasignados o reducidos, evitando gastos innecesarios en hardware o licencias.
+      \item \textbf{Prevención de riesgos por falta de capacidad:} Detecta tendencias de crecimiento que podrían afectar la operación, permitiendo actuar antes de que se presenten impactos en el servicio.
+      \item \textbf{Soporte a decisiones estratégicas de inversión:} Proporciona simulaciones y escenarios que permiten justificar inversiones futuras con base en datos reales y proyecciones confiables.
+    \end{itemize}
+  \end{exampleblock}
+
+  % Right column – Dificultad
+  \column{0.30\textwidth}
+  \begin{block}{Dificultad de implementación: $\star\star$}
+    La funcionalidad de gestión de capacidad requiere una adecuada integración con el entorno virtual, definición de umbrales y políticas de análisis. Aunque es una función nativa de Aria Operations, su valor se maximiza cuando se ajusta a la realidad operativa y financiera de la organización, por lo que se recomienda la participación de analistas de infraestructura y finanzas de TI.
+  \end{block}
+
+\end{columns}
+\end{tiny}
+\end{frame}
